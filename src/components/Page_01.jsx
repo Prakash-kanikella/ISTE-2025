@@ -52,7 +52,7 @@ function Page_01() {
             <img src="/pictures/pixelcut-export (17) 2.svg" alt='Group' className='astronaut'/>
             <img src="/pictures/unsplash_FPSrDsq5i20.svg" className="centered-image foreground-image" alt="Unsplash" />
 
-            {/* New white section */}
+          
             <div className="white-section">
                 <h2>Welcome to the ISTE Community</h2>
                 <p>We are glad to have you here. Explore our events, workshops, and more.</p>
