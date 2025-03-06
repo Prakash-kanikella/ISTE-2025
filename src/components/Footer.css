@@ -1,0 +1,52 @@
+.footer {
+  background-color:rgba(35, 47, 62, 1);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Rubik';
+}
+
+h3 {
+  font-weight: 400; 
+}
+p{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+h4 {
+  font-weight: 300; 
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.address,
+.subscribe,
+.contacts {
+  margin: 10px;
+  max-width: 400px;
+}
+
+.subscribe-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #0056b3;
+}
+
+.copyright {
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  font-size: 14px;
+}
