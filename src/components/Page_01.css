@@ -39,19 +39,21 @@ body {
   display: flex;
   align-items: center;
   margin-left: 2px;
+  gap: 20px;
 }
 
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
-  margin-left: 1000px;
+  margin-left: 750px;
 }
 
 .nav-button {
   background: none;
   border: none;
   cursor: pointer;
+  margin-right: 50px;
 }
 
 .nav-button img {
