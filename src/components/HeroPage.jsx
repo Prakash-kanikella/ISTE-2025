@@ -1,26 +1,6 @@
-import { useEffect } from "react";
 import "./HeroPage.css";
 
 function HeroPage() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    const elements = document.querySelectorAll(".heroinfo, .image-container img:nth-child(1), .image-container img:nth-child(3)");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
   return (
     <div className="heropage">
       <div className="heroinfo">
@@ -53,12 +33,20 @@ function HeroPage() {
           </p>
         </div>
       </div>
+      <div>
+      {/* Main animated images */}
+        <div className="image-container">
+          <img src="public/pictures/aboutus.png" alt="Tech event" />
+          <img src="public/pictures/mission.jpeg" alt="Innovation" />
+          <img src="public/pictures/vision.jpeg" alt="Students working" />
+        </div>
 
-
-      <div className="image-container">
-        <img  src="public/pictures/aboutus.png" alt="Tech event" />
-        <img src="public/pictures/mission.jpeg" alt="Innovation" />
-        <img  src="public/pictures/vision.jpeg" alt="Students working" />
+        {/* New bottom images that appear on hover */}
+        <div className="bottom-images">
+          <img src="public/pictures/aboutus.png" alt="Tech event" />
+          <img src="public/pictures/mission.jpeg" alt="Innovation" />
+          <img src="public/pictures/vision.jpeg" alt="Students working" />
+        </div>
       </div>
     </div>
   );
