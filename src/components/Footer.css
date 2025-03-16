@@ -1,52 +1,248 @@
 .footer {
-  background-color:rgba(35, 47, 62, 1);
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  font-family: 'Rubik';
-}
-
-h3 {
-  font-weight: 400; 
-}
-p{
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-h4 {
-  font-weight: 300; 
-}
-.info {
+  font-family: "quattrocento",sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  background-color: rgba(35, 47, 62, 1);
+  color: white;
+  padding: 90px 50px;
+  position: relative;
+  overflow: hidden;
+  height: 440px;
+  transition: height 0.5s ease-in-out;
 }
 
-.address,
-.subscribe,
-.contacts {
-  margin: 10px;
-  max-width: 400px;
+.address {
+  font-family: "Play";
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 2;
+  font-size: 24px;
+  padding-left: 170px;
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+}
+
+.iste {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  align-items: center;
+  font-size: 59px;
+  color: white;
+  text-transform: capitalize;
+
+}
+.iste.visible{
+  transition: transform 0.8s ease-in-out;
+  transform: translateX(-150px);
+}
+/* Full Name Appears on Hover */
+.full-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 15px;
+  width: 250px;
+  font-size: 40px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+.full-text.visible, .contacts.visible, .subscribe.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.full-text.visible {
+  opacity: 1;
+  transform: translateX(-150px);
+}
+
+.subscribe, .contacts {
+  font-family: "Quattrocento", serif;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.subscribe h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 
 .subscribe-btn {
-  margin-top: 10px;
-  padding: 8px 15px;
+  margin-top: 30px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
-  border-radius: 5px;
+  padding: 0px 20px;
   cursor: pointer;
+  border-radius: 30px;
+  height: 50px;
+  position: absolute;
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.subscribe-btn:hover {
-  background-color: #0056b3;
+.contacts h4 {
+  width: 529px;
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: lowercase;
+}
+.contacts p{
+  font-family: Quattrocento;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts div {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  align-self: flex-start;
+}
+.contacts div a img{
+   width: 40px;
+   height: 40px;
 }
 
-.copyright {
-  margin-top: 20px;
-  border-top: 1px solid #555;
-  padding-top: 10px;
-  font-size: 14px;
+.I{
+  position: relative;
+  right: 8px;
+}
+
+/* 🟢 RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .address {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .iste {
+    font-size: 50px;
+  }
+
+  .full-text {
+    font-size: 32px;
+  }
+
+  .subscribe h3 {
+    font-size: 32px;
+  }
+
+  .subscribe-btn {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  .contacts p {
+    font-size: 30px;
+  }
+
+  .contacts h4 {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .iste {
+    font-size: 42px;
+  }
+
+  .full-text {
+    font-size: 28px;
+  }
+
+  .subscribe h3 {
+    font-size: 28px;
+  }
+
+  .subscribe-btn {
+    font-size: 18px;
+    padding: 6px 14px;
+  }
+
+  .contacts p {
+    font-size: 26px;
+  }
+
+  .contacts h4 {
+    font-size: 16px;
+  }
+
+  .contacts div a img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .iste {
+    font-size: 36px;
+  }
+
+  .full-text {
+    font-size: 24px;
+  }
+
+  .subscribe h3 {
+    font-size: 24px;
+  }
+
+  .subscribe-btn {
+    font-size: 16px;
+    padding: 5px 12px;
+  }
+
+  .contacts p {
+    font-size: 22px;
+  }
+
+  .contacts h4 {
+    font-size: 14px;
+  }
+
+  .contacts div a img {
+    width: 28px;
+  }
 }

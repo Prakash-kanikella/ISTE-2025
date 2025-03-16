@@ -4,6 +4,7 @@ import Page01 from './components/Page_01';
 import './index.css';
 import Footer from './components/Footer';
 import HeroPage from './components/HeroPage';
+import TeamHeads from './components/TeamHeads';
 
 function App() {
   const [showPage01, setShowPage01] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       {showPage01 ? (
         <div>
           <Page01 />
+          <TeamHeads />
           <HeroPage />
           <Footer />
         </div>

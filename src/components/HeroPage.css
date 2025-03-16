@@ -16,7 +16,6 @@
   opacity: 0;
   transform: translateX(-500px);
   transition: opacity 1s ease-out, transform 1s ease-out;
-  
 }
 
 .heropage:hover .heroinfo {
@@ -44,50 +43,21 @@
   height: 250px;
 }
 
-/* Styling for Each Image */
 .image-container img {
   position: absolute;
   width: 130%;
   height: 130%;
   transform: translateX(-300px);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 1s ease-in-out;
+  transition: transform 1.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-out;
 }
-/* .image-container img {
-  position: absolute;
-            height: auto;
-            width: 130%;  
-            height: 130%; 
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-            transform: rotate(-45deg);
-            transition: transform 0.3s ease-in-out;
-} */
 
-/* Position and Rotation */
+
 .image-container img:nth-child(1) {
   opacity: 1;
-  transition: opacity 1s ease, transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: 3
 }
-/* .image-container img:nth-child(1) {
-  opacity: 1;
-  transform: rotate3d(1, 0, 0, -45deg) rotate(-45deg) translateX(-350px) translateZ(-490px);
-  z-index: 3;
-}
 
-.image-container img:nth-child(2) {
-  transform: rotate3d(1, 0, 0, -45deg) rotate(-45deg) translateX(-350px) translateZ(-290px);
-            z-index: 2;
-}
-
-.image-container img:nth-child(3) {
-  opacity: 1;
-  transform: rotate3d(1, 0, 0, -45deg) rotate(-45deg) translateX(-350px) translateZ(-90px);
-  z-index: 1;
-} */
-
-
-/* Hover Effect */
 .heropage:hover .image-container img:nth-child(1) {
   transform: rotate3d(1, 0, 0, -45deg) rotate(-45deg) translateX(-350px) translateZ(-490px);
   z-index: 3;
@@ -103,7 +73,6 @@
   z-index: 1;
 }
 
-/* Bottom images that appear on hover */
 .bottom-images {
   display: flex;
   gap: 20px;
@@ -121,7 +90,6 @@
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* On Hover, Bottom Images Appear */
 .heropage:hover .bottom-images {
   opacity: 1;
   transform: translateY(0);

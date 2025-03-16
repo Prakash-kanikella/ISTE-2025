@@ -34,14 +34,13 @@ function HeroPage() {
         </div>
       </div>
       <div>
-      {/* Main animated images */}
+
         <div className="image-container">
           <img src="public/pictures/aboutus.png" alt="Tech event" />
           <img src="public/pictures/mission.jpeg" alt="Innovation" />
           <img src="public/pictures/vision.jpeg" alt="Students working" />
         </div>
 
-        {/* New bottom images that appear on hover */}
         <div className="bottom-images">
           <img src="public/pictures/aboutus.png" alt="Tech event" />
           <img src="public/pictures/mission.jpeg" alt="Innovation" />
