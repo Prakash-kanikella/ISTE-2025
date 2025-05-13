@@ -1,0 +1,20 @@
+/* PageLayout.module.css */
+.pageLayout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add different spacing between specific components */
+  .heroPage {
+    margin-bottom: 6rem;
+  }
+  
+  .slider {
+    margin-bottom: 4rem;
+  }
+  
+  .teamHeads {
+    margin-bottom: 4rem;
+  }
+  
+  /* No margin needed after footer */

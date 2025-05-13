@@ -36,15 +36,15 @@ function HeroPage() {
       <div>
 
         <div className="image-container">
-          <img src="public/pictures/aboutus.png" alt="Tech event" />
-          <img src="public/pictures/mission.jpeg" alt="Innovation" />
-          <img src="public/pictures/vision.jpeg" alt="Students working" />
+          <img src="/pictures/aboutus.png" alt="Tech event" />
+          <img src="/pictures/mission.jpeg" alt="Innovation" />
+          <img src="/pictures/vision.jpeg" alt="Students working" />
         </div>
 
         <div className="bottom-images">
-          <img src="public/pictures/aboutus.png" alt="Tech event" />
-          <img src="public/pictures/mission.jpeg" alt="Innovation" />
-          <img src="public/pictures/vision.jpeg" alt="Students working" />
+          <img src="/pictures/aboutus.png" alt="Tech event" />
+          <img src="/pictures/mission.jpeg" alt="Innovation" />
+          <img src="/pictures/vision.jpeg" alt="Students working" />
         </div>
       </div>
     </div>
