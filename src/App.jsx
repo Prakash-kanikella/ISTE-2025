@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import LoadingPage from './components/LoadingPage';
 import Page01 from './components/Page_01';
-import styles from './App.module.css'; // Ensure the correct import path
+import styles from './App.module.css';
 import './index.css';
 import Footer from './components/Footer';
 import HeroPage from './components/HeroPage';
 import TeamHeads from './components/TeamHeads';
-import Slider from './components/Slider';
+import EventCard from './components/PolaroidSlider';
+import ScrollingGallery from './components/ScrollingGallery';
 
 function App() {
   const [showPage01, setShowPage01] = useState(false);
@@ -22,7 +23,15 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+useEffect(() => {
+  if (showPage01) {
+    // Scroll to top immediately after Page01 becomes visible
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // or 'smooth'
+    });
+  }
+}, [showPage01]);
   return (
     <>
       {showPage01 ? (
@@ -32,7 +41,10 @@ function App() {
             <HeroPage />
           </div>
           <div className={styles.slider}>
-            {/* <Slider /> */}
+            <ScrollingGallery />
+          </div>
+          <div className={styles.slider}>
+            <EventCard />
           </div>
           <div className={styles.teamHeads}>
             <TeamHeads />

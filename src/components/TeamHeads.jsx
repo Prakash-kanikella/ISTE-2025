@@ -4,7 +4,7 @@ import "./TeamHeads.css";
 const TeamHeads = () => {
   return (
     <div className="meetourteam">
-      <h2>Meet Our Team</h2>
+      <h2 className="component_heading">Meet Our Team</h2>
     <div className="grid-container">
       <div className="grid-item">
           <img className="profileimg" src="pictures/TeamHead1.jpeg" alt="Team Member 1" />

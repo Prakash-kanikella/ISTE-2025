@@ -1,0 +1,56 @@
+.scroller-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  height: 120vh;
+  overflow: hidden;
+}
+
+.strap {
+  width: 25vw;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-track {
+  display: flex;
+  flex-direction: column;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.image-track.forward {
+  animation-name: scroll-up;
+}
+
+.image-track.reverse {
+  animation-name: scroll-down;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.scroll-img {
+  padding: 20px;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}

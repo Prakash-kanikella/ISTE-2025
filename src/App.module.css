@@ -1,10 +1,9 @@
-/* PageLayout.module.css */
+
 .pageLayout {
     display: flex;
     flex-direction: column;
   }
   
-  /* Add different spacing between specific components */
   .heroPage {
     margin-bottom: 6rem;
   }
@@ -17,4 +16,3 @@
     margin-bottom: 4rem;
   }
   
-  /* No margin needed after footer */

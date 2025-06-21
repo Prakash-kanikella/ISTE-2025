@@ -9,50 +9,32 @@ function Page_01() {
             <div className="nav">
                 <div className="nav-left">
                     <img src="/pictures/Mask group.svg" alt="Logo" className="logo"/>
-                    <h1>ISTE</h1>
-                </div>
-                <div className="nav-links">
-                    <a href="https://www.facebook.com/istenitc/" target="_blank" rel="noopener noreferrer">
-                        <img src="/pictures/facebook 1.svg" alt="Facebook"/>
-                    </a>
-                    <a href="https://x.com/iste_nitc" target="_blank" rel="noopener noreferrer">
-                        <img src="/pictures/social-media 1.svg" alt="Social Media"/>
-                    </a>
-                    <a href="https://www.youtube.com/@istenitcchapter4641" target="_blank" rel="noopener noreferrer">
-                        <img src="/pictures/youtube 1.svg" alt="YouTube"/>
-                    </a>
-                    <a href="https://www.linkedin.com/company/iste-nitc/" target="_blank" rel="noopener noreferrer">
-                        <img src="/pictures/linkedin 1.svg" alt="LinkedIn"/>
-                    </a>
-                    <a href="https://www.instagram.com/iste_nitc/" target="_blank" rel="noopener noreferrer">
-                        <img src="/pictures/instagram 1.svg" alt="Instagram"/>
-                    </a>
+                    <h1 className="iste-text">ISTE</h1>
                 </div>
                 <button className="nav-button">
                     <img src="/pictures/Group 55.svg" alt="Button"/>
                 </button>
             </div>
 
-            <div className="content-top">
-                <h1>Indian Society For<br />Technical Education</h1>
+            <div className="main-content">
+                <div className="content-text">
+                    <h1>Indian Society For<br />Technical Education</h1>
+                    <p>Your name, your organization name, contact information, the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of any URLs on our site that you would like to link to should all be included in your application. Wait two to three weeks for a reply.</p>
+                    <p className="join-text">Join ISTE CLUB</p>
+                    <a href="#" className="register-btn">Register Now</a>
+                </div>
+             <div className="video-glow-wrapper">
+                <div className="video-circle">
+                        <div className="scrolling-map">
+                            <img src="/pictures/globemap.png" alt="Scrolling Globe" />
+                        </div>
+                </div>
+                </div>
             </div>
 
-            <div className="content-middle">
-                <p>Join ISTE</p>
-                <a href="#" className="register-btn">Register Now</a>
-            </div>
-
-            <div className="video-circle">
-                <video autoPlay loop muted>
-                    <source src="/pictures/earth.mp4" type="video/mp4" />
-                    
-                </video>
-            </div>
-
-            <img src="/pictures/pixelcut-export (17) 2.svg" alt='Group' className='astronaut'/>
+            <img src="/pictures/pixelcut-export (17) 2.svg" alt='Group' className='astronaut' />
             <img src="/pictures/unsplash_FPSrDsq5i20.svg" className="centered-image foreground-image" alt="Unsplash" />
 
-          
             <div className="white-section">
                 <h2>Welcome to the ISTE Community</h2>
                 <p>We are glad to have you here. Explore our events, workshops, and more.</p>
