@@ -1,0 +1,131 @@
+.techquila-carousel {
+  padding: 3rem 1rem;
+    background-color: rgba(223, 233, 245, 0.555);
+  text-align: center;
+}
+
+.techquila-carousel h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.techquila-carousel p {
+  position: relative;
+  top: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+
+.techquila-carousel .component_heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 33px;
+  width: 70%;
+  height: 2px; 
+  background-color: rgb(140, 160, 184);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.techquila-carousel .component_heading::before {
+  content: "";
+  position: absolute;
+  bottom: -8px; 
+  left: 36%;
+  width: 25%;
+  height: 4px;
+  background-color: rgb(240, 167, 10);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.slide-item {
+  padding: 1.5rem;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.slide-item img {
+  scale: 0.8;
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.slide-item h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.slide-item a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration-line: none;
+  transition: color 0.2s ease;
+}
+
+.slide-item a:hover {
+  color: #0056b3;
+}
+
+/* Optional: Customize arrow & dots */
+.slick-prev, .slick-next {
+  top: unset;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 45%;
+}
+.slick-next {
+  right: 45%;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.custom-nav-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.custom-nav-buttons button {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: #5e5a5a8b;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.custom-nav-buttons button:hover:enabled {
+  transform: scale(1.2);
+}
+
+.custom-nav-buttons button:disabled {
+  color: #bbb;
+  cursor: default;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    left: 40%;
+  }
+  .slick-next {
+    right: 40%;
+  }
+}

@@ -8,6 +8,8 @@ import HeroPage from './components/HeroPage';
 import TeamHeads from './components/TeamHeads';
 import EventCard from './components/PolaroidSlider';
 import ScrollingGallery from './components/ScrollingGallery';
+import Contact from './components/Contact';
+import Techquila from './components/Techquila';
 
 function App() {
   const [showPage01, setShowPage01] = useState(false);
@@ -40,6 +42,9 @@ useEffect(() => {
           <div className={styles.heroPage}>
             <HeroPage />
           </div>
+          <div className={styles.heroPage}>
+            <Techquila />
+          </div>
           <div className={styles.slider}>
             <ScrollingGallery />
           </div>
@@ -48,6 +53,9 @@ useEffect(() => {
           </div>
           <div className={styles.teamHeads}>
             <TeamHeads />
+          </div>
+          <div className={styles.teamHeads}>
+            <Contact />
           </div>
           <Footer />
         </div>

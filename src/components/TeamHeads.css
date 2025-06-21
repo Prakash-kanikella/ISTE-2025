@@ -94,21 +94,28 @@ padding: 15px;
   font-weight: 100;
   text-align: end;
 }
-.slider-container {
+.pagination-buttons {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100px; /* Adjust as needed */
+  justify-content: center;
+  gap: 40px;
 }
 
-.slider-item {
-  flex: 1;
-  margin: 0 10px; /* Adjust spacing as needed */
+.pagination-buttons button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-.slider-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.pagination-buttons button:hover:enabled {
+  transform: scale(1.2);
+}
+
+.pagination-buttons button:disabled {
+  color: #bbb;
+  cursor: default;
+  transform: none;
 }
