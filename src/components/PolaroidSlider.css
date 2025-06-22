@@ -1,6 +1,5 @@
 
 .poloroid_container {
-  width: 1525px;
   height: 800px;
   overflow: hidden;
   display: flex;
@@ -152,9 +151,9 @@
 }
 
 .arrow.left {
-  left: 90px;
+  left: 50px;
 }
 
 .arrow.right {
-  right: 90px;
+  right: 50px;
 }

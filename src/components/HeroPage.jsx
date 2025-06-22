@@ -1,8 +1,19 @@
+import { useState, useRef } from "react";
 import "./HeroPage.css";
 
 function HeroPage() {
+  const heroRef = useRef(null);
+  const [animated, setAnimated] = useState(false);
+
+  const handleFirstHover = () => {
+    if (!animated) {
+      heroRef.current.classList.add("animate");
+      setAnimated(true);
+    }
+  };
+
   return (
-    <div className="heropage">
+    <div className="heropage" ref={heroRef} onMouseEnter={handleFirstHover}>
       <div className="heroinfo">
         <div className="aboutus">
           <h2>About Us</h2>

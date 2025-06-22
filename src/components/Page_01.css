@@ -241,6 +241,56 @@ body {
   font-size: 1.25rem;
 }
 
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.95);
+  color: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.close-button {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  font-size: 3rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-options {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu-options li {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 30px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-options li:hover {
+  color: #0393e0;
+}
+
 
 @media (max-width: 768px) {
   .container {
