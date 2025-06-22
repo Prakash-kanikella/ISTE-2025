@@ -12,6 +12,7 @@
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "axios": "^1.10.0",
+    "cors": "^2.8.5",
     "framer-motion": "^12.4.10",
     "gsap": "^3.12.7",
     "jquery": "^3.7.1",

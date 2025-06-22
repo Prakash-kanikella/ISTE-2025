@@ -6,36 +6,32 @@ import arrowr from "../../src/assets/image 21.svg";
 
 const events = [
   {
-    title: 'State Conventions',
-    description: 'we have been host to two state-level conventions of ISTE- Drishti in 2017, and Atreya in 2019. An exciting blend of events, workshops, lectures and exhibitions, Atreya witnessed a footfall of over 2.5k people coming together from all over the state. The programme commenced with an inaugural ceremony by our chief guest C R Thomas, the Deputy Director of VSSC-ISRO.',
-    image: 'https://via.placeholder.com/538x344.png?text=Event+1',
+    title: 'INNOVATHON',
+    description: 'Join ISTE\'s flagship hackathon where creativity meets code. Open to all skill levels—perfect for beginners and pros alike. Build innovative solutions, learn new tech, and win big. Fuel your passion and compete for glory in tech!',
+    image: '/events/Event1.png',
   },
   {
-    title: 'Newton Speaks',
-    description: 'Titled after one of the biggest pioneers of science who dared to think outside the box, our monthly webinar series aims at connecting students with people who have achieved wonders in their fields.',
-    image: 'https://via.placeholder.com/538x344.png?text=Event+2',
+    title: 'Elocution Competition – National Youth Day',
+    description: 'Celebrate Swami Vivekananda’s vision for Vikasit Bharat 2047. Express your ideas with passion, clarity, and conviction. Top speakers will shine in the grand finale. Unleash the power of your voice and inspire the nation!',
+    image: '/events/Event2.png',
   },
   {
-    title: 'JEENIUS',
-    description: 'One of our focal events is our hugely successful annual mock exam for engineering aspirants- JEEnius. Modelled after the All India Joint Entrance Examination, this test intends to familiarize students with the question style and paper pattern, and will also help them gauge out their stand in the rankings. In the past, we have conducted JEEnius in various districts in Kerala & Andhra Pradesh.',
-    image: 'https://via.placeholder.com/538x344.png?text=Event+3',
+    title: 'Impreza – Creative Fest',
+    description: 'Step into Impreza for a day full of fun and challenges. From photography and open mics to trivia and puzzles, there’s something for all. Get your creative juices flowing in this dynamic fest. Snap, sing, solve, and shine your way through the excitement!',
+    image: '/events/Event3.png',
   },
   {
-    title: 'School Spectrum',
-    description: 'Spreading knowledge through fun events is a cherished goal of ours. With a wide range of activities testing oratory talent to technical wiz to managerial skills, Spectrum is the pride of our club as it allows us to reach out to school students and put up activities which help them realize their capabilities and nurture their soft skills.',
-    image: 'https://via.placeholder.com/538x344.png?text=Event+4',
+    title: 'Infinity and Beyond – Design Workshop & Competition',
+    description: 'Unleash your design potential in this creative double feature. Master Photoshop in our hands-on workshop guided by experts. Showcase your skills in the poster competition judged by ISRO. Perfect for both budding artists and seasoned designers.',
+    image: '/events/Event4.png',
   },
   {
-    title: 'Online Spectrum',
-    description: 'Another hugely successful event is "Online Spectrum", held for the first time in July 2020. Collaborating with ISTE student chapters from other colleges, we conducted an all India level online competition, with various fun challenges ranging from technical skills to creative talents, to keep the quarantine slump at bay. The highlight was "Dream Codex", a 4-round coding event over the span of a week. ',
-    image: 'https://via.placeholder.com/538x344.png?text=Event+5',
-  },
-  {
-    title: 'Tech week',
-    description: 'Tech Week, conducted alongside other NITC clubs, is a jam-packed 2 day weekend, boasting fun events such as Junkyard Wars (Beat the other teams by building the best machine out of scrap materials!), Admania (Market the most whimsical products!), Tech charades (The type of dumb charades Newton would enjoy!), and so on. It is no doubt one of the biggest events first years eagerly look forward to.',
-    image: 'https://via.placeholder.com/538x344.png?text=Event+5',
+    title: 'Valentine’s Day Celebration – With Anuragam',
+    description: 'Celebrate love, laughter, and friendship with us this Valentine’s. Fun-filled moments await under the stars with delightful activities. An evening of youthful energy and joyful connections. Let love bloom in the most playful and heartfelt way!',
+    image: '/events/Event5.png',
   },
 ];
+
 
 
 function PolaroidSlider() {

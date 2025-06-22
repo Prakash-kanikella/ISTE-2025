@@ -34,7 +34,7 @@ const TeamHeads = () => {
 
   return (
     <div className="meetourteam">
-      <h2 className="component_heading">Meet Our Team</h2>
+      <h2 className="component_heading">MEET OUR TEAM</h2>
       <div className="grid-container">
         {teamMembers.slice(startIndex, startIndex + visibleCount).map((file, index) => (
           <div className="grid-item" key={index}>

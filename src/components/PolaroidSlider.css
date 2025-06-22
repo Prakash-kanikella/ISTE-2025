@@ -1,7 +1,7 @@
 
 .poloroid_container {
-  width: 1389px;
-  height: 728.72px;
+  width: 1525px;
+  height: 800px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -106,7 +106,6 @@
   object-fit: cover;
   border-radius: 29.24px;
   margin-bottom: 16px;
-  background-color: #d7d5d5;
 }
 
 .card-text {
@@ -118,12 +117,13 @@
 
 .card-title {
   color: #fff;
-  background-color: #000;
+  background-color: #444444;
   width: fit-content;
   height: 30px;
   font-weight: 400;
   font-size: 21.05px;
   padding: 4px 6px;
+  border-radius: 5px;
 }
 
 .card-line {
@@ -152,9 +152,9 @@
 }
 
 .arrow.left {
-  left: 30px;
+  left: 90px;
 }
 
 .arrow.right {
-  right: 30px;
+  right: 90px;
 }

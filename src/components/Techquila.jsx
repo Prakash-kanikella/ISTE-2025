@@ -5,8 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import img1 from "/tequila/pic1.jpg";
-import img2 from "/tequila/pic2.jpg";
-import img3 from "/tequila/pic3.jpg";
+import img2 from "/tequila/pic2.jpeg";
+import img3 from "/tequila/pic3.png";
 import img4 from "/tequila/pic4.jpg";
 import img5 from "/tequila/pic5.png";
 import img6 from "/tequila/pic6.png";
@@ -17,15 +17,15 @@ import img10 from "/tequila/pic10.jpg";
 import img11 from "/tequila/pic11.png";
 
 const articles = [
+  { title: "Antimatter: Unlocking the Universe's Mysteries", img: img1, url: "https://techquila.istenitc.com/subpages/15" },
+  { title: "EVM Technology", img: img2, url: "https://techquila.istenitc.com/subpages/14" },
+  { title: "Quantum Computing", img: img3, url: "https://techquila.istenitc.com/subpages/13" },
   { title: "Sustainability As A Lifestyle", img: img4, url: "https://techquila.istenitc.com/subpages/4" },
   { title: "Can Li-Fi replace Wi-Fi?", img: img5, url: "https://techquila.istenitc.com/subpages/5" },
   { title: "5G And The Phone-y Conspiracies", img: img6, url: "https://techquila.istenitc.com/subpages/6" },
   { title: "The Euphoria of Traveling", img: img7, url: "https://techquila.istenitc.com/subpages/7" },
   { title: "The Deep Web", img: img8, url: "https://techquila.istenitc.com/subpages/8" },
   { title: "The Human Condition", img: img9, url: "https://techquila.istenitc.com/subpages/9" },
-  { title: "Telling science stories well", img: img1, url: "https://techquila.istenitc.com/subpages/1" },
-  { title: "Can AI help in achieving marketing goals?", img: img2, url: "https://techquila.istenitc.com/subpages/2" },
-  { title: "Quantum future", img: img3, url: "https://techquila.istenitc.com/subpages/3" },
   { title: "Quantum Dots", img: img10, url: "https://techquila.istenitc.com/subpages/10" },
   { title: "GTA & its impact", img: img11, url: "https://techquila.istenitc.com/subpages/11" }
 ];

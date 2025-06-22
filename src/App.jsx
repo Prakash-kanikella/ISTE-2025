@@ -42,11 +42,11 @@ useEffect(() => {
           <div className={styles.heroPage}>
             <HeroPage />
           </div>
-          <div className={styles.heroPage}>
-            <Techquila />
-          </div>
           <div className={styles.slider}>
             <ScrollingGallery />
+          </div>
+          <div className={styles.heroPage}>
+            <Techquila />
           </div>
           <div className={styles.slider}>
             <EventCard />

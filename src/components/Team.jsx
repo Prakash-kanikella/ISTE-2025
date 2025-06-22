@@ -78,7 +78,7 @@ export default function Team() {
 
   return (
     <div className="team-section">
-      <h2 className="team-title">Meet Our Team</h2>
+      <h2 className="team-title">MEET OUR TEAM</h2>
       <div className={`team-grid ${selectedMember !== null ? "expanded" : ""}`}>
         {teamMembers.map((member, index) => (
           <div

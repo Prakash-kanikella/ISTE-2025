@@ -11,6 +11,23 @@ function Page_01() {
                     <img src="/pictures/Mask group.svg" alt="Logo" className="logo"/>
                     <h1 className="iste-text">ISTE</h1>
                 </div>
+                <div className="nav-links">
+                    <a href="https://www.facebook.com/istenitc/" target="_blank" rel="noopener noreferrer">
+                        <img src="/pictures/facebook 1.svg" alt="Facebook"/>
+                    </a>
+                    <a href="https://x.com/iste_nitc" target="_blank" rel="noopener noreferrer">
+                        <img src="/pictures/social-media 1.svg" alt="Social Media"/>
+                    </a>
+                    <a href="https://www.youtube.com/@istenitcchapter4641" target="_blank" rel="noopener noreferrer">
+                        <img src="/pictures/youtube 1.svg" alt="YouTube"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/iste-nitc/" target="_blank" rel="noopener noreferrer">
+                        <img src="/pictures/linkedin 1.svg" alt="LinkedIn"/>
+                    </a>
+                    <a href="https://www.instagram.com/iste_nitc/" target="_blank" rel="noopener noreferrer">
+                        <img src="/pictures/instagram 1.svg" alt="Instagram"/>
+                    </a>
+                </div>
                 <button className="nav-button">
                     <img src="/pictures/Group 55.svg" alt="Button"/>
                 </button>
@@ -19,9 +36,7 @@ function Page_01() {
             <div className="main-content">
                 <div className="content-text">
                     <h1>Indian Society For<br />Technical Education</h1>
-                    <p>Your name, your organization name, contact information, the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of any URLs on our site that you would like to link to should all be included in your application. Wait two to three weeks for a reply.</p>
-                    <p className="join-text">Join ISTE CLUB</p>
-                    <a href="#" className="register-btn">Register Now</a>
+                    <p>NIT CALICUT STUDENT'S CHAPTER</p>
                 </div>
              <div className="video-glow-wrapper">
                 <div className="video-circle">
