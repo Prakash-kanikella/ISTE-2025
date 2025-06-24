@@ -18,7 +18,7 @@ The app will be available at `http://localhost:5173/` by default.
 
 
 
-######## Backend Setup
+## Backend Setup
 
 ### 1. Install Dependencies
 ```sh
