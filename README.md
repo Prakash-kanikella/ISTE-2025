@@ -37,7 +37,7 @@ SERVER_URL=http://localhost:5001
 
 Make sure your MongoDB URI is valid. You can use MongoDB Atlas for a free cloud database.
 
-##Start the backend server with nodemon
+### 2. Start the backend server with nodemon
 ```sh
 npx nodemon server.js
 ```
