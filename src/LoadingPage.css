@@ -23,17 +23,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
+    width: 90%; /* Added for better mobile responsiveness */
+    max-width: 1200px; /* Added to limit width on very large screens */
+    padding: 20px; /* Added padding for mobile */
+    box-sizing: border-box;
 }
 
 .image-group {
     display: flex;
     align-items: center;
-    gap: 0px; 
+    gap: 0px;
+    width: 100%; /* Make it responsive */
+    justify-content: center; /* Center items */
 }
 
 .center-image {
-    width: 25%; 
+    width: 25%;
+    max-width: 300px; /* Limit maximum size */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .typewriter-text {
@@ -41,8 +49,54 @@
     color: white;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.15em solid white; /* Cursor effect */
+    border-right: 0.15em solid white;
     animation: blink-caret 0.75s step-end infinite;
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+}
+
+.scroll-text {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 100%; /* Full width */
+}
+
+.scroll-icon {
+    width: 25%;
+    max-width: 100px; /* Limit maximum size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .center-image {
+        width: 40%; /* Larger percentage on smaller screens */
+    }
+    
+    .typewriter-text, .scroll-text {
+        font-size: 18px; /* Smaller font on mobile */
+    }
+    
+    .center-content {
+        gap: 15px; /* Smaller gap on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .center-image {
+        width: 50%; /* Even larger on very small screens */
+    }
+    
+    .typewriter-text, .scroll-text {
+        font-size: 16px; /* Even smaller font on very small screens */
+        white-space: normal; /* Allow text to wrap on very small screens */
+        border-right: none; /* Remove cursor effect when text wraps */
+    }
+    
+    .image-group {
+        flex-direction: column; /* Stack images vertically if needed */
+    }
 }
 
 @keyframes blink-caret {
@@ -52,14 +106,4 @@
     50% {
         border-color: white;
     }
-}
-
-.scroll-text {
-    color: white;
-    font-size: 25px; /* Adjust the font size as needed */
-    text-align: center;
-}
-
-.scroll-icon {
-    width: 25%; /* Adjust the width as needed */
 }

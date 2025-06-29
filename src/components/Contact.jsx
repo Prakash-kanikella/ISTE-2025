@@ -1,71 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Contact.css";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [submitMessage, setSubmitMessage] = useState('');
-  const [isError, setIsError] = useState(false);
+export default function Contact() {
+  const [result, setResult] = React.useState("");
 
-  useEffect(() => {
-    if (submitMessage) {
-      const timer = setTimeout(() => {
-        setSubmitMessage('');
-        setIsError(false);
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [submitMessage]);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
-  const handleChange = (e) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-  };
+    formData.append("access_key", "f577ad16-c223-4911-913c-c0d019be78ab"); // Replace with your Web3Forms access key
 
-  const isValidEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-  const validateForm = () => {
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      setSubmitMessage("All fields are required.");
-      setIsError(true);
-      return false;
-    }
-    if (!isValidEmail(formData.email)) {
-      setSubmitMessage("Please enter a valid email.");
-      setIsError(true);
-      return false;
-    }
-    return true;
-  };
+    const data = await response.json();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!validateForm()) return;
-
-    try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/contact`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-      });
-
-      const data = await res.json();
-      setSubmitMessage(data.message);
-      setIsError(!res.ok);
-
-      if (res.ok) {
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      }
-    } catch (err) {
-      setSubmitMessage("Network error. Please try again.");
-      setIsError(true);
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
     }
   };
 
@@ -86,7 +44,13 @@ const Contact = () => {
             <div className="info-box">
               <i className="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>National Institute of Technology, Calicut<br />NIT Campus P.O 673 601,<br />Kozhikode, India</p>
+              <p>
+                National Institute of Technology, Calicut
+                <br />
+                NIT Campus P.O 673 601,
+                <br />
+                Kozhikode, India
+              </p>
             </div>
           </div>
 
@@ -116,7 +80,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="php-email-form">
+            <form onSubmit={onSubmit} className="php-email-form">
               <div className="row">
                 <div className="form-group">
                   <input
@@ -124,8 +88,6 @@ const Contact = () => {
                     name="name"
                     className="form-control"
                     placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -135,22 +97,9 @@ const Contact = () => {
                     name="email"
                     className="form-control"
                     placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                   />
                 </div>
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="subject"
-                  className="form-control"
-                  placeholder="Subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                />
               </div>
               <div className="form-group">
                 <textarea
@@ -158,30 +107,17 @@ const Contact = () => {
                   className="form-control"
                   rows="5"
                   placeholder="Message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                 ></textarea>
               </div>
-
-              {submitMessage && (
-                <div
-                  className={`form-message ${isError ? "error" : "success"}`}
-                  style={{ textAlign: "center", marginBottom: "10px" }}
-                >
-                  {submitMessage}
-                </div>
-              )}
-
               <div className="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit">Submit Form</button>
               </div>
+              <span>{result}</span>
             </form>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Contact;
+}
