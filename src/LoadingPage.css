@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    -webkit-overflow-scrolling: touch; /* Better scrolling on iOS */
 }
 
 .background-image {
@@ -24,78 +25,134 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 90%; /* Added for better mobile responsiveness */
-    max-width: 1200px; /* Added to limit width on very large screens */
-    padding: 20px; /* Added padding for mobile */
+    width: 95%; /* More space on mobile */
+    max-width: 1200px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
 .image-group {
     display: flex;
     align-items: center;
-    gap: 0px;
-    width: 100%; /* Make it responsive */
-    justify-content: center; /* Center items */
+    gap: 10px; /* Small gap between images */
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .center-image {
     width: 25%;
-    max-width: 300px; /* Limit maximum size */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 300px;
+    min-width: 120px; /* Prevent images from getting too small */
+    height: auto;
 }
 
 .typewriter-text {
-    font-size: 25px;
+    font-size: clamp(16px, 4vw, 25px); /* Fluid typography */
     color: white;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid white;
     animation: blink-caret 0.75s step-end infinite;
-    text-align: center; /* Center text */
-    width: 100%; /* Full width */
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Better readability */
 }
 
 .scroll-text {
     color: white;
-    font-size: 25px;
+    font-size: clamp(14px, 3.5vw, 22px); /* Fluid typography */
     text-align: center;
-    width: 100%; /* Full width */
+    width: 100%;
+    line-height: 1.4; /* Better readability */
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 .scroll-icon {
     width: 25%;
-    max-width: 100px; /* Limit maximum size */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100px;
+    min-width: 60px; /* Prevent icon from getting too small */
+    height: auto;
+    animation: bounce 2s infinite; /* Add subtle animation */
+}
+
+/* Touch target optimizations */
+button, .scroll-icon {
+    touch-action: manipulation; /* Remove touch delay on mobile */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .center-image {
-        width: 40%; /* Larger percentage on smaller screens */
-    }
-    
-    .typewriter-text, .scroll-text {
-        font-size: 18px; /* Smaller font on mobile */
-    }
-    
     .center-content {
-        gap: 15px; /* Smaller gap on mobile */
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .image-group {
+        gap: 8px;
+    }
+    
+    .center-image {
+        width: 30%;
+    }
+    
+    .typewriter-text {
+        white-space: normal; /* Allow text to wrap */
+        border-right: none; /* Remove cursor when text wraps */
+        animation: none;
     }
 }
 
 @media (max-width: 480px) {
+    .center-content {
+        gap: 12px;
+        padding: 8px;
+    }
+    
     .center-image {
-        width: 50%; /* Even larger on very small screens */
+        width: 40%;
     }
     
-    .typewriter-text, .scroll-text {
-        font-size: 16px; /* Even smaller font on very small screens */
-        white-space: normal; /* Allow text to wrap on very small screens */
-        border-right: none; /* Remove cursor effect when text wraps */
+    .scroll-icon {
+        width: 30%;
     }
     
+    /* Adjust layout for very small screens */
     .image-group {
-        flex-direction: column; /* Stack images vertically if needed */
+        flex-direction: row; /* Keep horizontal but allow wrap */
+    }
+}
+
+/* Portrait orientation specific adjustments */
+@media (max-width: 768px) and (orientation: portrait) {
+    .center-content {
+        top: 45%; /* Move content slightly higher */
+    }
+}
+
+/* Landscape orientation specific adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .center-content {
+        gap: 10px;
+    }
+    
+    .center-image {
+        width: 20%;
+    }
+}
+
+/* Animation for scroll icon */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
     }
 }
 

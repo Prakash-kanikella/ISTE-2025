@@ -83,6 +83,8 @@ function Page_01({ scrollTo, refs }) {
         <div className="content-text">
           <h1>Indian Society For<br />Technical Education</h1>
           <p>NIT CALICUT STUDENT'S CHAPTER</p>
+          <p className="join-text">Join us in our journey of technical excellence</p>
+          <a href="#register" className="register-btn">Register Now</a>
         </div>
 
         <div className="video-glow-wrapper">
@@ -98,11 +100,6 @@ function Page_01({ scrollTo, refs }) {
         src="/pictures/pixelcut-export (17) 2.svg"
         alt="Group"
         className="astronaut"
-      />
-      <img
-        src="/pictures/unsplash_FPSrDsq5i20.svg"
-        className="centered-image foreground-image"
-        alt="Unsplash"
       />
 
       <div className="white-section">
