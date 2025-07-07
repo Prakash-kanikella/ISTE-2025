@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
-  height: 120vh;
+  gap: 1rem;
+  height: auto;
+  min-height: 100vh;
   overflow: hidden;
+  padding: 20px 0;
 }
 
 .strap {
-  width: 25vw;
+  width: 90vw;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -49,8 +51,52 @@
 }
 
 .scroll-img {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .scroller-wrapper {
+    gap: 1.5rem;
+    height: 120vh;
+  }
+  
+  .strap {
+    width: 35vw;
+  }
+  
+  .scroll-img {
+    padding: 20px;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 475px) {
+  .scroller-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .strap {
+    width: 95vw;
+    display: none;
+  }
+  .strap:first-child {
+    display: block;
+  }
+  
+  .scroll-img {
+    height: 30vh;
+    padding: 5px;
+  }
+  
+  .image-track {
+    animation-duration: 10s;
+  }
 }
