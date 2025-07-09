@@ -25,14 +25,24 @@ function Footer() {
 
       <div className={`subscribe ${isVisible ? "visible" : ""}`}>
         <h3>Subscribe To Techquila</h3>
-        <button className="subscribe-btn">Subscribe</button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfUbaxCZ3J8c6JWMTOpHjjpXNZiTmJzMTpg9FmvDEO1_bGEyg/viewform"
+          className="subscribe-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+         Subscribe
+        </a>
+      <h4>© Copyright ISTE NITC. All Rights Reserved</h4>
       </div>
+
+
 
       <div className={`contacts ${isVisible ? "visible" : ""}`}>
         <p>Get in Touch</p>
-        <h4>LIKHITH (SECRETARY) : +91 91138 38324</h4>
-        <h4>AARON JOSEPH (JOINT SECRETARY) : +91 98954 45593</h4>
-        <h4>SAI DATHU (JOINT SECRETARY) : +91 80742 34873</h4>
+        <h4>NIKHITH (SECRETARY) : +91 81056 08992</h4>
+        <h4>SAHIL PRUSTY (JOINT SECRETARY) : +91 8600 54058</h4>
+        <h4>VEDA MOKSHAJNA (JOINT SECRETARY) : +91 76808 41833</h4>
         <div className="social-icons">
           <a href=""><img src="pictures/twitter.png" alt="Twitter"/></a>
           <a href="https://www.facebook.com/istenitc/"><img src="pictures/facebook.png" alt="Facebook"/></a>
