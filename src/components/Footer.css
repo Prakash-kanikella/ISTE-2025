@@ -7,7 +7,7 @@
   padding: 90px 50px;
   position: relative;
   overflow: hidden;
-  height: 440px;
+  height: 380px;
   transition: height 0.5s ease-in-out;
 }
 
@@ -18,9 +18,10 @@
   align-items: center;
   gap: 2;
   font-size: 24px;
-  padding-left: 170px;
+  padding-left: 230px;
   position: relative;
   transition: transform 0.8s ease-in-out;
+  padding-top: 13px;
 }
 
 .iste {
@@ -43,7 +44,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
-  margin-top: 15px;
+  margin-top: 12px;
   width: 250px;
   font-size: 40px;
   opacity: 0;
@@ -75,7 +76,7 @@
 }
 
 .subscribe-btn {
-  margin-top: 30px;
+  margin-top: 35px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: none;
@@ -91,36 +92,46 @@
   letter-spacing: 0%;
   vertical-align: middle;
   transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.subscribe h4 {
+  margin-top: 125px;
 }
 
 .contacts h4 {
   width: 529px;
   font-family: "Quattrocento", serif;
   font-weight: 400;
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: 0%;
   vertical-align: middle;
   text-transform: lowercase;
+  padding-left: 13%;
+  padding-top: 12px;
 }
 .contacts p{
   font-family: Quattrocento;
   font-weight: 700;
   font-size: 50px;
-  line-height: 100%;
+  line-height: 20%;
   letter-spacing: 0%;
   vertical-align: middle;
+  padding-left: 12.5%;
+  
 }
 .contacts{
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 23px;
 }
 .contacts div {
-  margin-top: 30px;
+  margin-top: -20px;
   display: flex;
   gap: 30px;
   align-self: flex-start;
+  padding-left: 13%;
 }
 .contacts div a img{
    width: 40px;
