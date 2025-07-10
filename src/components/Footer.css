@@ -7,7 +7,7 @@
   padding: 90px 50px;
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 380px;
   transition: height 0.5s ease-in-out;
 }
 
@@ -108,17 +108,17 @@
   letter-spacing: 0%;
   vertical-align: middle;
   text-transform: lowercase;
-  padding-left: 5.5%;
+  padding-left: 13%;
   padding-top: 12px;
 }
 .contacts p{
   font-family: Quattrocento;
   font-weight: 700;
   font-size: 50px;
-  line-height: 1%;
+  line-height: 20%;
   letter-spacing: 0%;
   vertical-align: middle;
-  padding-left: 4.5%;
+  padding-left: 12.5%;
   
 }
 .contacts{
@@ -127,10 +127,11 @@
   gap: 23px;
 }
 .contacts div {
-  margin-top: px;
+  margin-top: -20px;
   display: flex;
   gap: 30px;
   align-self: flex-start;
+  padding-left: 13%;
 }
 .contacts div a img{
    width: 40px;

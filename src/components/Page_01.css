@@ -40,7 +40,7 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
-  margin-left: 750px;
+  margin-left: 850px;
 }
 
 .nav-button {
@@ -136,7 +136,7 @@ body {
 
 .video-glow-wrapper {
   position: relative;
-  right: 130px;
+  right: 100px;
   top: 14px;
   width: 440px;
   height: 420px;
