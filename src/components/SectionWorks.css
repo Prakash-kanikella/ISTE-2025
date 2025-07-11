@@ -29,7 +29,7 @@
 
 .event-title-container .component_heading {
   font-size: 2rem;
-  color: #333;
+  color: #203168;
   position: relative;
   display: inline-block;
 }
@@ -74,7 +74,7 @@
 }
 
 .event-content p {
-  font-size: 1rem;
+  font-size: 1.0rem;
   color: #444;
   line-height: 1.6;
   flex: 1;
