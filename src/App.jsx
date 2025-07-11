@@ -10,6 +10,7 @@ import EventCard from './components/PolaroidSlider';
 import ScrollingGallery from './components/ScrollingGallery';
 import Contact from './components/Contact';
 import Techquila from './components/Techquila';
+import SectionWorks from './components/SectionWorks';
 
 function App() {
   const [showPage01, setShowPage01] = useState(false);
@@ -74,6 +75,10 @@ function App() {
 
           <div ref={eventsRef} className={styles.slider}>
             <EventCard />
+          </div>
+
+          <div ref={eventsRef} className={styles.slider}>
+            <SectionWorks />
           </div>
 
           <div ref={teamRef} className={styles.teamHeads}>
