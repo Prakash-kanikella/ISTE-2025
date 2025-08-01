@@ -82,7 +82,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 26%;
+  top: 21%;
   width: 100%;
   padding: 0 6%;
   z-index: 10;
@@ -109,11 +109,11 @@ body {
 
 .join-text {
   position: relative;
-  top: 50px;
+  top: 0px;
   font-size: 1.3rem;
   margin-top: 10px;
 }
-
+/*
 .register-btn {
   position: relative;
   top: 30px;
@@ -133,7 +133,7 @@ body {
   background-color: white;
   color: black;
 }
-
+*/
 .video-glow-wrapper {
   position: relative;
   right: 100px;

@@ -84,9 +84,7 @@ function Page_01({ scrollTo, refs }) {
           <h1>Indian Society For<br />Technical Education</h1>
           <p>NIT CALICUT STUDENT'S CHAPTER</p>
           <p className="join-text">Join us in our journey of technical excellence</p>
-          <a href="#register" className="register-btn">Register Now</a>
         </div>
-
         <div className="video-glow-wrapper">
           <div className="video-circle">
             <div className="scrolling-map">
